@@ -5,7 +5,7 @@ var scrollStager = function(){
 
 scrollStager.prototype.setProgress = function(val){
 
-    if(this.tl && this.tlLength !== 0 && (val <= this.tlLength || val >= 0)) {
+    if(this.tl && this.tlLength !== 0 && val <= this.tlLength && val >= 0) {
         this.step = val;
     }
 
